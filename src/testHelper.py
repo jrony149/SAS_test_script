@@ -1,4 +1,3 @@
-#from requests.exceptions impo
 import requests
 import json
 
@@ -32,12 +31,4 @@ class TestHelper():
         return response
 
         
-        # try:
-        #     response = requests.post(url=target, data=payload, headers=headers, timeout=2)
-        #     response.raise_for_status()
-        #     return response
-        # except requests.exceptions.Timeout:
-        #     return json({"Timeout error":"Response from server timed out."})
-        # except requests.exceptions.HTTPError as http_error:
-        #     print("HELLO FROM HTTP ERROR!")
-        #     return json.dumps({"HTTP error":f'HTTP error code: {http_error}'})
+        
