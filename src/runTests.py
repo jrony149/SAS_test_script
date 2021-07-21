@@ -21,7 +21,7 @@ def login_test(flag):
     try:
         data = resp.json()
     except ValueError:
-        return json.dumps({f'{test_num}: Login Submission Test':"Failed.  No JSON returned in server response."})
+        return json.dumps({f'{test_num}Login Submission Test':"Failed.  No JSON returned in server response."})
     
     #Now that we know a JSON response has been returned, we check formatting of response by first gathering our boolean checks...
     token_in_data, status_200 = "token" in data, status_code == 200 
