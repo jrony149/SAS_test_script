@@ -4,6 +4,7 @@ import json
 class TestHelper():
 
     def __init__(self):
+        
         self.url                      = "https://reqres.in/api/"
         self.url2                     = "http://localhost:13801/SAS_test"
         self.response                 = requests.get(self.url + "users")
@@ -14,8 +15,8 @@ class TestHelper():
 
         headers  = {'content-type':'application/json'}
         payload  = json.dumps(params)
-        #target   = self.url + endpoint
-        target   = self.url2
+        target   = self.url + endpoint
+        #target   = self.url2
         response = None
         
         if request_type == "p":
