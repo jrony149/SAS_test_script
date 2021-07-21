@@ -1,7 +1,8 @@
 
-#Script for testing req/res API responses.
+<header>Script for testing req/res API responses.</header>
 
-##To Run Script:
+
+<header>To Run Script:</header>
 
 * Make sure Docker is installed on your local machine.
 * Clone repository.
@@ -10,7 +11,7 @@
 * Run the "./runcontainer.sh" command
 * If you would like to clean the container from your system, run the "./stoprm.sh" command.
 
-#Have a great day!!
+<header>Have a great day!!</header>
 
 
 
