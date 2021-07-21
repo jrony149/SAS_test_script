@@ -112,10 +112,10 @@ def delete_user():
 
     global tsi 
     id_number = str(random.randint(1, 6))
-    resp = tsi.send_request({}, "users/" + id_number, "d")
+    resp      = tsi.send_request({}, "users/" + id_number, "d")
 
     response_correct = resp.status_code == 204
-    message = "Passed.  Correct response returned from server." if response_correct else "Failed.  Incorrect status code."
+    message          = "Passed.  Correct response returned from server." if response_correct else "Failed.  Incorrect status code."
     return json.dumps({"Test 5(a): Delete User Test":message}) 
 
 def main():
